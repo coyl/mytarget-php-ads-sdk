@@ -3,7 +3,7 @@
 namespace Dsl\MyTarget;
 
 use Dsl\MyTarget as f;
-use Dsl\MyTarget\Exception\MyTargetException;
+use Dsl\MyTarget\Exception\SdkException;
 use GuzzleHttp\Psr7 as psr;
 use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStackPrototype;
 use Dsl\MyTarget\Transport\RequestFactory;
@@ -75,7 +75,7 @@ class Client
      * @param Context $context
      *
      * @return mixed
-     * @throws MyTargetException
+     * @throws SdkException
      */
     public function delete($path, array $query = null, Context $context)
     {
@@ -93,7 +93,7 @@ class Client
      * @param Context $context
      *
      * @return mixed
-     * @throws MyTargetException
+     * @throws SdkException
      */
     public function postMultipart($path, array $body, array $query = null, Context $context)
     {

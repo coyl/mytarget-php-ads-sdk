@@ -2,7 +2,7 @@
 
 namespace Dsl\MyTarget\Exception;
 
-class InvalidArgumentException extends \Exception implements MyTargetException
+class InvalidArgumentException extends \Exception implements SdkException
 {
 
 }

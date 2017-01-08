@@ -3,7 +3,7 @@
 namespace Dsl\MyTarget\Exception;
 
 class DecodingException extends \RuntimeException
-    implements MyTargetException, ApiException
+    implements SdkException, ApiException
 {
     /**
      * @param string $decodingError

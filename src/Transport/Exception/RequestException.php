@@ -2,12 +2,12 @@
 
 namespace Dsl\MyTarget\Transport\Exception;
 
-use Dsl\MyTarget\Exception\MyTargetException;
+use Dsl\MyTarget\Exception\SdkException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
 class RequestException extends \RuntimeException
-    implements MyTargetException
+    implements SdkException
 {
 
     /**

@@ -2,10 +2,10 @@
 
 namespace Dsl\MyTarget\Operator\Exception;
 
-use Dsl\MyTarget\Exception\MyTargetException;
+use Dsl\MyTarget\Exception\SdkException;
 
 class UnexpectedFileArgumentException extends \InvalidArgumentException
-    implements MyTargetException
+    implements SdkException
 {
     /**
      * @param mixed $file

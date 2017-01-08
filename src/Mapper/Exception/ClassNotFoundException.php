@@ -2,10 +2,10 @@
 
 namespace Dsl\MyTarget\Mapper\Exception;
 
-use Dsl\MyTarget\Exception\MyTargetException;
+use Dsl\MyTarget\Exception\SdkException;
 
 class ClassNotFoundException extends \LogicException
-    implements MyTargetException, ContextUnawareException
+    implements SdkException, ContextUnawareException
 {
     /**
      * @var string

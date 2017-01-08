@@ -2,10 +2,10 @@
 
 namespace Dsl\MyTarget\Mapper\Exception;
 
-use Dsl\MyTarget\Exception\MyTargetException;
+use Dsl\MyTarget\Exception\SdkException;
 
 class ContextAwareException extends \LogicException
-    implements MyTargetException
+    implements SdkException
 {
     public function __construct($inClass, $inField, \Exception $previous)
     {
